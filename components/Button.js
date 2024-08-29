@@ -1,7 +1,8 @@
 import React from 'react';
-import { Fugaz_One } from "next/font/google";
+import { Fugaz_One, Lato } from "next/font/google";
 
 const fugaz = Fugaz_One({ subsets: ["latin"], weight: "400" });
+const lato = Lato({ subsets: ["latin"], weight: "400" });
 
 const Button = (props) => {
     const { text, dark, full, disabled } = props;
@@ -15,7 +16,7 @@ const Button = (props) => {
             }
             disabled={disabled}
         >
-            <p className={'px-6 sm:px-10 whitespace-nowrap py-2 sm:py-4 ' + fugaz.className}>
+            <p className={'px-6 sm:px-10 whitespace-nowrap py-2 sm:py-4 ' + lato.className}>
                 {text}
             </p>
         </button>

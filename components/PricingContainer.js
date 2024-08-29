@@ -1,10 +1,11 @@
-import { Fugaz_One } from 'next/font/google';
+import { Fugaz_One, Lato } from 'next/font/google';
 import React from 'react'
 import PricingCard from './PricingCard';
 
 
 
 const fugaz = Fugaz_One({ subsets: ["latin"], weight: "400" });
+const lato = Lato({ subsets: ["latin"], weight: "400" });
 
 const PricingContainer = () => {
   const express_offers = [
@@ -44,8 +45,8 @@ const premium_offers = [
 
 
   return (
-    <div className='flex flex-col gap-4 p-4 sm:p-8 '>
-      <h1 className={'text-3xl sm:text-5xl md:text-6xl text-center textGradient ' + fugaz.className}>Our Plans</h1>
+    <div className='flex flex-col gap-4 p-4 sm:p-8 bg-indigo-50'>
+      <h1 className={'text-3xl sm:text-5xl md:text-6xl text-center textGradient ' + lato.className}>Our Plans</h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 p-4 rounded-lg gap-4 '>
 
       <PricingCard type="Express" amount="10,000" offers={express_offers} />

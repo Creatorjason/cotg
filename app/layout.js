@@ -2,6 +2,7 @@ import { Fugaz_One, Inter } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const fugaz = Fugaz_One({ subsets: ["latin"], weight: "400" });
@@ -19,10 +20,11 @@ const header = (
 )
 
 const footer = (
-  <footer className="p-4 sm:p-8 grid place-items-center">
+  // <footer className="p-4 sm:p-8 grid place-items-center">
 
-    <p className={'text-indigo-500 ' + fugaz.className}>Created with ❤️</p>
-  </footer>
+  //   <p className={'text-indigo-500 ' + fugaz.className}>Created with ❤️</p>
+  // </footer>
+  <Footer/>
 )
 export default function RootLayout({ children }) {
   return (
